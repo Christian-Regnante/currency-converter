@@ -1,0 +1,14 @@
+currency = {
+    USD: 1,
+    JYP: 143.75,
+    EUR: 0.88,
+    RUB: 78.73,
+    GBP: 0.74,
+    NRA: 137.32,
+    SHL: 129.20,
+    RWF: 1414.20
+}
+
+100 * 1414.20/143.75
+
+Amount * currency to convert to / convert from
