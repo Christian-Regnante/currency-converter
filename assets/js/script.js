@@ -107,7 +107,7 @@ function currency_converter() {
     if (convert_from != 'zero'|| convert_to != 'zero') {
         let total_amount = amount * currencies[convert_to] / currencies[convert_from]
         
-        total_amount = total_amount.toFixed(4)
+        total_amount = Math.round(total_amount * 100) / 100
         result_element.textContent = `${total_amount} ${convert_to}`
         result.style.top = '4.3rem'
     } else {
@@ -150,7 +150,8 @@ toggle_convertTo.addEventListener('change', () =>  {
     if (convert_toValue != 'zero' && convert_fromValue != 'zero') {
 
         let calculations = 1 * currencies[convert_toValue] / currencies[convert_fromValue]
-        calculations = calculations.toFixed(4)
+        calculations = Math.round(calculations * 10000) / 10000
+        // calculations = calculations.toFixed(4)
 
         detail_to.textContent = `${calculations} ${convert_toValue}`   
     }
