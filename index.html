@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon  goes here! -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/script.js"></script>
+    <title>Currency Converter</title>
+</head>
+<body>
+    <!-- <header></header> -->
+     <main>
+        <div class="container">
+            <div class="container-head">
+                <div class="details">
+                    <h2>Auto Detecting<br><span>Conversion...</span></h2>
+                    <div class="conversion">
+                        <p class="from">Currency to convert from</p>
+                        <!-- <p class="from">1 Rwandan Franc equals</p> -->
+                        <p class="to">Currency to convert to</p>
+                        <!-- <p class="to">0.10 Japanese Yen</p> -->
+                        <p class="date">4 Jun 13:20</p>
+                    </div>
+                </div>
+                
+                <div class="amount-results">
+                    <h2>Results</h2>
+                    <div class="result">
+                        <h3>0.00 USD</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <form action="/" class="actual-form" id="form-container">
+                    <div class="inputs">
+                        <!-- <label for=""></label> -->
+                        <select name="convert-from" id="convert-from">
+                            <option value="zero" style="width: 100%;">Currency To Convert From</option>
+                            <option value="USD" style="width: 100%;">USD Dollar</option>
+                            <option value="JYP" style="width: 100%;">Japanese Yen</option>
+                            <option value="EUR" style="width: 100%;">Euro</option>
+                            <option value="RUB" style="width: 100%;">Russian Ruble</option>
+                            <option value="GBP" style="width: 100%;">Pound Sterling</option>
+                            <option value="NRA" style="width: 100%;">Nepalease Ropee(NRA)</option>
+                            <option value="SHL" style="width: 100%;">Kenyan Shilling(SHL)</option>
+                            <option value="RWF" style="width: 100%;">Rwandan Franc</option>
+                        </select>
+                    </div>
+                    <div class="inputs">
+                        <!-- <label for=""></label> -->
+                        <select name="convert-to" id="convert-to">
+                            <option value="zero" style="width: 100%;">Currency To convert To</option>
+                            <option value="USD" style="width: 100%;">USD Dollar</option>
+                            <option value="JYP" style="width: 100%;">Japanese Yen</option>
+                            <option value="EUR" style="width: 100%;">Euro</option>
+                            <option value="RUB" style="width: 100%;">Russian Ruble</option>
+                            <option value="GBP" style="width: 100%;">Pound Sterling</option>
+                            <option value="NRA" style="width: 100%;">Nepalease Ropee(NRA)</option>
+                            <option value="SHL" style="width: 100%;">Kenyan Shilling(SHL)</option>
+                            <option value="RWF" style="width: 100%;">Rwandan Franc</option>
+                        </select>
+                    </div>
+                    <div class="inputs">
+                        <!-- <label for="amount"></label> -->
+                        <input type="number" name="amount" id="amount" placeholder="Enter the amount..." min="1">
+                    </div>
+                    <div class="ctrl-inputs">
+                        <div class="submit">
+                            <button type="submit" name="submit" id="submit">Convert</button>
+                        </div>
+                        <div class="reset">
+                            <button type="reset" id="reset">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+     </main>
+     <div class="attribution">
+    Coded by <a href="https://github.com/Christian-Regnante">Christian Regnante.</a>
+    </div>
+</body>
+</html>
